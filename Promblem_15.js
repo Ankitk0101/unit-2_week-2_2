@@ -1,27 +1,51 @@
 
 
-
-
-
-
-
-
-//    i am able do this question you are teach that level.
-
-
-
-
-
+function Utraverse(){
 
 arr = [[1,2,3],[4,5,6],[7,8,9]]
 
-for( var i=0 ; i<arr.length ; i++ )
-{
-    for( var j=0 ; j<arr.length ; j++ )
+ var  m =  arr.length
+  var n = arr[0].length
+
+ var arr1 =[]
+ 
+
+  for( var i=m-1; i>=0; i--)
+  {
+       arr1.push(arr[i][0])
+       
+  }
+
+  for( var j=1; j<=m-1; j++)
     {
-    //    if(arr[i].length == )
-       {
-        //   
-       }
+       
+        arr1.push(arr[0][j])
+   
     }
+
+    for( var j=1; j<=m-1; j++)
+        {
+           
+            arr1.push(arr[j][m-1])
+    
+            
+        }
+    
+
+        for( var j=n-2; j>=0; j--)
+            {
+               
+                arr1.push(arr[m-1][j])
+        
+                
+            }
+        
+
+
+
+
+
+   return arr1.join(' ')
 }
+
+console.log(Utraverse())
