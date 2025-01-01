@@ -32,7 +32,7 @@ arr = [[1,2,3],[4,5,6],[7,8,9]]
         }
     
 
-        for( var j=n-2; j>=0; j--)
+        for( var j=n-2; j>=1; j--)
             {
                
                 arr1.push(arr[m-1][j])
